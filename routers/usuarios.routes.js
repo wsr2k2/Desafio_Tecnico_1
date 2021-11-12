@@ -1,6 +1,6 @@
 const express = require("express"); //import do express
 const router = express.Router(); //define app como express
-const Usuario = require("./../model/usuarios"); // import do modelo pessoa
+const Usuario = require("./../model/usuarios"); // import do modelo usuário
 
 // rota raiz para testar conexão da API
 router.get('/', (req,res) => {
