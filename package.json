@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
     "dev": "nodemon index"
   },
   "repository": {
@@ -19,7 +20,11 @@
   "homepage": "https://github.com/wsr2k2/Desafio_Tecnico_1#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "node": "^17.0.1",
+    "mongoose": "^6.0.12",
+    "node": "^17.0.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.14"
-  }
+  },
+  "keywords": []
 }
