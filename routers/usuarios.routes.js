@@ -4,7 +4,7 @@ const Usuario = require("./../model/usuarios"); // import do modelo usuário
 
 // rota raiz para testar conexão da API
 router.get('/', (req,res) => {
-    res.status(200).json({message:"rota usuarios ok"});
+    res.status(200).json({message:"Bem vindo a API usuários"});
 });
 
 // rota para listar todos cadastros

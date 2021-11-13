@@ -7,10 +7,6 @@ const Conn = require("./model/conn/index"); //importando a conexao
 
 Conn(); //executa a func de conexao
 
-// app.get("/", (req, res) => {
-//     res.status(200).json({ message: "Pagina inicial carregada com sucesso" });
-//   });
-  
 const usuariosRouter = require("./routers/usuarios.routes");
 app.use('/',usuariosRouter);
 
