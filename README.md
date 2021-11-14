@@ -1,8 +1,6 @@
 # Projeto API usuários.
 
-link do heroku: https://desafio-tecnico-mod3.herokuapp.com/
-
-<a href="https://desafio-tecnico-mod3.herokuapp.com/" target= "_blank"> API Usuários</a>
+link do heroku: <a href="https://desafio-tecnico-mod3.herokuapp.com/" target= "_blank"> API Usuários</a>
 
 ------
 
