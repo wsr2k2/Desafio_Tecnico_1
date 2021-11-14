@@ -2,11 +2,29 @@
 
 Projeto de uma API para cadastro de usuários em banco de dados, utilizando NodeJs, MongoDB Atlas e deploy na nuvem via Heroku.
 
-#### Intro
+### Intro
 
-Nesse projeto o usuário poderá listar todos os usuários, listar por id, criar usuários, alterar usuários já cadastrados e deletar usuários cadastrados. Para que seja possível todas essas opções, foram criadas rotas específicas para cada uma delas, conforme abaixo:
+Nesse projeto o usuário poderá listar todos os usuários, listar por id, criar usuários, alterar usuários já cadastrados e deletar usuários cadastrados.
 
-##### Rota raiz: retorna a confirmação de funcionamento da API.
+Para iniciar, é necessário abrir o Prompt de comando/terminal e inicializar os comandos abaixo:
+
+```javascript
+npm init
+npm start
+npm install dotenv
+npm install express --save
+npm install mongoose
+```
+
+Para a utilização da API o usuário pode escolher algum API CLIENT de sua preferência, tais como, Insomnia, Postaman, Thunder Client (VS Code).
+
+Nesse projeto foi utilizado o Thunder Client pela sua facilidade de estar diretamente no VS Code, facilitando testes.
+
+Criado o pacote Environment para exportação/importação e também disponibilizado a collection com todas as rotas do CRUD já definidas.
+
+### Rotas criadas para cada ação a realizar:
+
+##### Rota raiz: retorna a confirmação de funcionamento da API. 
 
 ```javascript
 https://desafio-tecnico-mod3.herokuapp.com/
@@ -16,6 +34,8 @@ https://desafio-tecnico-mod3.herokuapp.com/
 ```
 
 ##### Rota Read: retorna a lista completa de usuários cadastrados.
+
+`GET /read` (todos usuários);
 
 ```javascript
 https://desafio-tecnico-mod3.herokuapp.com/read
@@ -49,6 +69,8 @@ https://desafio-tecnico-mod3.herokuapp.com/read
 
 ##### Rota read/Id: retorna o cadastro conforme o ID informado.
 
+`GET /read`/id (usuário por id)
+
 ```javascript
 https://desafio-tecnico-mod3.herokuapp.com/read/61904f7807c59a735bb043d8
 {
@@ -62,6 +84,8 @@ https://desafio-tecnico-mod3.herokuapp.com/read/61904f7807c59a735bb043d8
 ```
 
 Rota create: cria um novo usuário. (utilizar o modelo na aba BODY).
+
+`POST /create` (criar novo usuário);
 
 ```javascript
 https://desafio-tecnico-mod3.herokuapp.com/create
@@ -79,6 +103,8 @@ https://desafio-tecnico-mod3.herokuapp.com/create
 
 ###### Rota update: altera um usuário já cadastrado, buscando pelo ID.
 
+`PUT /update/id` (altera um usuário por id);
+
 ```javascript
 // usuário a ser alterado = 61904f7807c59a735bb043d8
 https://desafio-tecnico-mod3.herokuapp.com/update/61904f7807c59a735bb043d8
@@ -95,6 +121,8 @@ https://desafio-tecnico-mod3.herokuapp.com/update/61904f7807c59a735bb043d8
 ```
 
 ##### Rota delete: exclui um usuário já cadastrado, buscando pelo ID.
+
+`DELETE /delete/id` (deletar um usuário por id);
 
 ```javascript
 // usuário a ser excluído = 61904f7807c59a735bb043d8
