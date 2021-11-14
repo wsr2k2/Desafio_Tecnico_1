@@ -69,7 +69,7 @@ https://desafio-tecnico-mod3.herokuapp.com/read
 
 ##### Rota read/Id: retorna o cadastro conforme o ID informado.
 
-`GET /read`/id (usuário por id)
+`GET /read/id` (usuário por id)
 
 ```javascript
 https://desafio-tecnico-mod3.herokuapp.com/read/61904f7807c59a735bb043d8
