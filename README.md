@@ -2,6 +2,8 @@
 
 link do heroku: https://desafio-tecnico-mod3.herokuapp.com/
 
+<a href="https://desafio-tecnico-mod3.herokuapp.com/" target= "_blank"> API Usuários</a>
+
 ------
 
 Projeto de uma API para cadastro de usuários em banco de dados, utilizando NodeJs, MongoDB Atlas e deploy na nuvem via Heroku.
